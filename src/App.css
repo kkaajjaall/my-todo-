@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+body{
+    
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main
+{   background-color:rgb(6, 1, 43) ;
+    border: 1px solid white;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    width: 400px;
+    height: max-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sub img
+{
+   width:70px;
+   height: 70px;
+   
+   box-shadow: 3px 3px 5px white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-items
+{
+     display: flex;
+     flex-direction: row;
+     border: 1px solid white;
+     margin: 10px auto;
+     justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.add-items input 
+{
+    width: 300px;
+    background: transparent;
+    color: white;
+    border: none;
+    margin: 5px 20px;
+    outline: none;
+    overflow-x: scroll;
+    font-size: 15px;
+}
+.add-items input:hover{
+    
+    font-weight: bold;
+   
+}
+.add-items h3 {
+    margin-right: 20px;
+    
+    background-color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    color:black;
+    font-weight: boldr;
+    align-items: center;
+    
+
+}
+.add-items h3:hover 
+{
+    background-color: rgb(243, 220, 16);
+    box-shadow: 2px 3px solid yellow;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.each-items
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 1px solid  white;
+    padding: 5px  10px;
 }
+
+ .btn 
+ {
+     width: 40px;
+     height: 30px;
+     margin-top: 20px;
+    
+ }
+
+ .btn:hover
+ {
+    background-color: rgb(243, 220, 16);
+    box-shadow: 2px 3px solid yellow;
+    border: none;
+    outline: none;
+
+ }
+
+ .remove
+ {
+     margin-top: 20px;
+     padding: 5px;
+ }
+ .remove:hover
+ {
+    background-color: rgb(243, 220, 16);
+    box-shadow: 2px 3px solid yellow;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 30px;
+
+ }
+
+
+ /* media====================== */
+ @media (max-width:500px) {.main
+    {
+        width: 200px;
+        
+    }
+    
+    .sub img
+    {
+       width:40px;
+       height: 40px;
+       box-shadow: 3px 3px 5px white;
+    }
+    
+    .sub h1 
+    {
+        font-size: 20px;
+    }
+    .add-items
+    {
+         display: flex;
+         flex-direction: row;
+         border: 1px solid white;
+         margin: 10px auto;
+         justify-content: space-between;
+    }
+    
+    .add-items input 
+    {
+        width: 300px;
+        background: transparent;
+        color: white;
+        border: none;
+        margin: 5px 20px;
+        outline: none;
+        overflow-x: scroll;
+        font-size: 15px;
+    }
+    .add-items input:hover{
+        
+        font-weight: bold;
+       
+    }
+    .add-items h3 {
+        margin-right: 20px;
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 29px;
+        color:black;
+        font-weight: boldr;
+        align-items: center;
+        
+    
+    }
+   
+    
+     
+     
+ }
